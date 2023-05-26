@@ -1,6 +1,8 @@
-# Build
+# IDE
+.vscode/
+
+# Build files
 ./build/*
-demo
 
 # Prerequisites
 *.d
