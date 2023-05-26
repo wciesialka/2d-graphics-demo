@@ -1,12 +1,16 @@
 CC = g++
-CFLAGS = -lsfml-graphics
+CFLAGS = -lsfml-graphics -lsfml-window -lsfml-system
 
 run: demo
 	./demo
 
 clean:
-	rm -f ./*.o
+	rm -f ./build/*
 	rm -f demo
 
-demo: src/main.cpp
-	$(CC) $(CFLAGS) $^ -o $@
+demo: build/main.o
+	$(CC) $^ -o $@ $(CFLAGS)
+
+build/main.o: src/main.cpp
+	$(CC) -c $^ -o $@
+
