@@ -9,11 +9,11 @@ Assignment 2 - 2D Graphics Demo for CSCI 43700
 
 ### Building
 
-To build, clone the directory and run `make` in the source directory. This will build an executable named `demo`.
+To build, clone the directory and run `make` in the source directory. This will build an executable named `demo.out`.
 
 ## Running
 
-After building, you may run the program using `./demo` or `make run`.
+After building, you may run the program using `./demo.out` or `make run`.
 
 ## Author
 
